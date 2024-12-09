@@ -17,6 +17,8 @@ For starting phpmyadmin
 docker run --name phpmyadmin-container --network=cbse -e PMA_HOST=mysql-container -e PMA_PORT=3306 -p 8080:80 phpmyadmin/phpmyadmin:latest
 ```
 
+For starting jupyter
 ```
- docker run  --network=cbse -p 8888:8888 jupyter/base-notebook
+ docker run  --network=cbse -p 8888:8888 -v notebooks:/home/jovyan/work jupyter/base-notebook
+
 ```
